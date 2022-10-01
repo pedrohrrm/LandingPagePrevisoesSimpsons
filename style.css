@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9;
+    background-image: url(Midia/backgroundHeader.png);
+}
+
+.nav audio {
+    margin-top: 28px;
+    margin-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+}
+
+.nav-lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+
+.nav-lista a {
+    text-decoration: none;
+    color: #ff81c1;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.nav-lista a:hover {
+    color: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding-left: 60%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    /* descontando o valor do header. */
+    background-image: url(Midia/backgroundMain.jpg);
+}
+
+.main h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+}
+
+.main p {
+    font-size: 60px;
+    color: #ff81c1;
+    font-style: italic;
+    margin-bottom: 36px;
+    margin-top: 12px;
+}
+
+.lastPrev h4 {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #ff81c1;
+
+}
+
+.lastPrev a {
+    text-decoration: none;
+}
+
+.typing {
+    width: 428px;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.lastPrev {
+    position: relative;
+    background-color: #FFFFFF;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lastPrev div {
+    padding-right: 35px;
+    max-width: 50%;
+}
+
+.lastPrev img {
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.lastPrev h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.previsoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+
+.previsoes a {
+    text-decoration: none;
+
+}
+
+.previsoes h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.previsoes p {
+    font-style: italic;
+    margin-bottom: 42px;
+}
+
+.previsoes-lista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 100px;
+
+
+}
+
+.previsoes-lista1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 100px;
+
+
+
+
+}
+
+.previsoes img {
+    width: 80%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    opacity: 0.6;
+    transition: 0.8s;
+
+}
+
+.previsoes img:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FED420;
+    padding: 80px 0;
+    color: #2f64d6;
+}
+
+footer a {
+    color: #ff81c1;
+    text-decoration: none;
+}
+
+footer p {
+    margin-left: 25px;
+}
+
+@media(max-width: 1050px) {
+    .main h1 {
+        display: flex;
+        align-items: flex-start;
+        font-size: 50px;
+        width: 100px;
+
+        font-weight: 700;
+    }
+
+    .main p {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .main {
+        background-size: cover;
+
+    }
+
+    .typing {
+        width: 370px;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .nav {
+        background-size: cover;
+        height: 50px;
+    }
+
+    .nav audio {
+        margin-top: 15px;
+        width: 110px;
+    }
+
+    .nav-lista {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .nav-lista a {
+        font-weight: 600;
+        display: flex;
+    }
+
+    .lastPrev {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .lastPrev div {
+        max-width: 80%;
+    }
+
+    .lastPrev div h2 {
+        font-size: 45px;
+    }
+
+    .lastPrev img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .previsoes img {
+        width: 85%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        font-size: 34px;
+        margin-bottom: 0px;
+
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 930px) {
+    .main h1 {
+        display: flex;
+        align-items: flex-start;
+        font-size: 25px;
+        width: 100px;
+        margin-top: -140px;
+        font-weight: 700;
+    }
+
+    .main p {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .typing {
+        width: 180px;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 600px) {
+    .main h1 {
+        display: flex;
+        align-items: flex-start;
+        font-size: 15px;
+        width: 100px;
+        margin-top: -140px;
+        font-weight: 700;
+        margin-left: 90px;
+
+    }
+
+    .main p {
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 90px;
+    }
+
+    .typing {
+        width: 110px;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+    }
+
+    .nav audio {
+        margin-left: 100px;
+        margin-right: -38px;
+    }
+}
